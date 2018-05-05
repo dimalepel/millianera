@@ -516,10 +516,13 @@ img {
   z-index: 100;
   
   display: none;
+  height: 100vh;
   padding: 110px 0 110px 214px;
   
   border: 7px solid #fff;
   background-color: #2f3641;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .site-screen--menu-open .overlay-menu {
   display: -webkit-box;
