@@ -29,6 +29,20 @@
 	font-style: normal;
 	font-weight: 700;
 }
+@font-face {
+	font-family: "Montserrat";
+	src: url("fonts/Montserrat-Medium.otf");
+  
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("fonts/Montserrat-SemiBold.otf");
+  
+	font-style: normal;
+	font-weight: 600;
+}
 /**
 * Общие стили
 **/
@@ -219,12 +233,15 @@ img {
   right: -7px;
   top: -4px;
   
-  display: block;
+  display: none;
   width: 4px;
   height: 4px;
   
   border-radius: 50%;
   background-color: #ababab;
+}
+.site-header__cart--no-empty.site-header__cart::after {
+  display: block;
 }
 /**
 * Контент
@@ -486,4 +503,120 @@ img {
   -webkit-transform-origin: left top;
   transform-origin: left top;
   
+}
+/**
+* Меню
+**/
+.overlay-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  
+  display: none;
+  padding: 110px 0 110px 214px;
+  
+  border: 7px solid #fff;
+  background-color: #2f3641;
+}
+.site-screen--menu-open .overlay-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.overlay-menu__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0 0 63px 0;
+  
+  list-style: none;
+}
+.overlay-menu__main li {
+  margin-right: 84px;
+}
+.overlay-menu__main a {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 36px;
+  color: #fff;
+  text-decoration: none;
+}
+.overlay-menu__category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0;
+  margin: 0 0 55px 0;
+  
+  list-style: none;
+  
+  background-image: url(img/site-title.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.overlay-menu__category li {
+  margin-right: 57px;
+}
+.overlay-menu__category a {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+.overlay-menu__category a:hover {
+  color: #cdb48b;
+}
+.overlay-menu__contact {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 25px;
+  color: #fff;
+}
+.overlay-menu__contact p:nth-child(2) {
+  color: #cdb48b;
+}
+/**
+* Шапка при открытом меню
+**/
+.site-screen--menu-open .menu-trigger {
+  position: relative;
+  z-index: 110;
+  
+  background-color: #2f3641;
+  background-image: url(img/hamburger-v.png);
+}
+.site-screen--menu-open .site-header__lang {
+  position: relative;
+  z-index: 110;
+}
+.site-screen--menu-open .site-header__lang a {
+  color: #fff;
+}
+.site-screen--menu-open .site-header__lang .active a {
+  color: #c3a776;
+}
+.site-screen--menu-open .site-header__lang li:first-child::after {
+  border-color: #fff;
+}
+.site-screen--menu-open .site-header__cart {
+  position: relative;
+  z-index: 110;
+  
+  background-image: url(img/cart-v.png);
+}
+.site-screen--menu-open .site-header__cart::after {
+  background-color: #c3a675;
 }

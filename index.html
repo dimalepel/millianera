@@ -12,6 +12,28 @@
   <body>
     
     <div class="site-screen">
+    
+      <div class="overlay-menu">
+        <ul class="overlay-menu__main">
+          <li><a href="" title="">Главная</a></li>
+          <li><a href="" title="">Новости</a></li>
+          <li><a href="" title="">О компании</a></li>
+        </ul>        
+        <ul class="overlay-menu__category">
+          <li><a href="" title="">Kостюмы</a></li>
+          <li><a href="" title="">Брюки</a></li>
+          <li><a href="" title="">Пиджаки</a></li>
+          <li><a href="" title="">Платья</a></li>
+          <li><a href="" title="">Топы</a></li>
+          <li><a href="" title="">Юбки</a></li>
+        </ul>
+        <div class="overlay-menu__contact">
+          <p>г. Киев, ул. Антоновича (Горького)  8Б</p>
+          <p>info@millianera.com</p>
+          <p>063 260 04 44</p>
+        </div>      
+      </div>
+    
       <header class="site-header">
         <div class="site-header__aside">
           <button class="menu-trigger js--menu-trigger"><span class="visually-hidden ">Открыть меню</span></button>
@@ -25,7 +47,7 @@
           <li class="active"><a href="" title="">ru</a></li>
           <li><a href="" title="">en</a></li>
         </ul>
-        <a href="" class="site-header__cart" title=""><span class="visually-hidden ">Корзина покупок</span></a>
+        <a href="" class="site-header__cart site-header__cart--no-empty" title=""><span class="visually-hidden ">Корзина покупок</span></a>
       </header>
       <main class="site-main">
         <aside class="site-aside">
@@ -64,5 +86,8 @@
       </main>
     </div>
     
+    <!-- js include -->
+    <script src = "js/jquery-3.3.1.min.js"></script>
+    <script src = "js/common.js"></script> 
   </body>
 </html>
