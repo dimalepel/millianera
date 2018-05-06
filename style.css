@@ -88,6 +88,17 @@ img {
   border-radius: 24px;
   border: 1px solid #b0b0b0;
 }
+.border-button:hover {
+  background: #fff;
+  border-color: #fff;
+}
+.border-button--white {
+  width: 180px;
+  font-weight: 600;
+  
+  background-color: #fff;
+  border-color: #fff;
+}
 /**
 * Шапка
 **/
@@ -524,6 +535,9 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.site-screen--menu-open {
+  position: relative;
+}
 .site-screen--menu-open .overlay-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -622,4 +636,81 @@ img {
 }
 .site-screen--menu-open .site-header__cart::after {
   background-color: #c3a675;
+}
+/**
+* Карточка товара
+**/
+.grey-column {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 105px;
+  height: calc(100vh - 117px);
+   
+  background-color: #f0f0f0;
+}
+/**
+* Карточка товара: контент
+**/
+.single-product__data {
+  background-color: #e4e4e4;
+}
+.single-product__data {
+  padding-top: 70px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.single-product__title {
+  margin-bottom: 20px;
+  
+  font-weight: 700;
+  color: #2f3641;
+  font-size: 21px;
+}
+.single-product__about {
+  margin-bottom: 40px;
+  
+  font-size: 14px;
+  line-height: 26px;
+  color: #2f3641;
+}
+.single-product__thumbnail {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  height: calc(100vh - 117px);
+}
+.single-product__size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0 0 50px 0;
+  
+  list-style: none;
+}
+.single-product__size li {
+  margin-right: 30px;
+  
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.single-product__size span {
+  color: #909090;
+}
+.single-product__size input[type="radio"] {
+  display: none;
+}
+.single-product__size input[type="radio"]:checked + span { 
+  color: #2a323c;
+}
+.single-product__price {
+  margin-bottom: 40px;
+  
+  font-size: 36px;
+  font-weight: 600;
+}
+.single-product__price span {
+  font-size: 21px;
+  font-weight: 400;
 }

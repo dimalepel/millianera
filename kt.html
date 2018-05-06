@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Главная</title>
+    <title>Карточка товара</title>
     <link href="favicon.png" rel="shortcut icon"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- css include -->
@@ -49,36 +49,41 @@
         <a href="" class="site-header__cart site-header__cart--no-empty" title=""><span class="visually-hidden ">Корзина покупок</span></a>
       </header>
       <main class="site-main">
-        <aside class="site-aside">
-          <p class="collection-lable">Коллекция <span class="collection-title">Лето 2018</span></p>
-          <p class="aside-description">VERMICHELLE и MILLIANERA</p>
-          <a href="" class="border-button" title="">Смотреть</a>
-          <ul class="aside-category">
-            <li><a href="" title="">Kостюмы</a></li>
-            <li><a href="" title="">Брюки</a></li>
-            <li><a href="" title="">Пиджаки</a></li>
-            <li><a href="" title="">Платья</a></li>
-            <li><a href="" title="">Топы</a></li>
-            <li><a href="" title="">Юбки</a></li>
+        <div class="grey-column"></div>
+        <div class="single-product__data">
+          <div class="pagination"></div>
+          <h1 class="single-product__title">Черный костюм</h1>
+          <p class="single-product__about">Вещи тёмных и насыщенных цветов автоматически делают образ более выразительным и современным - особео если он состоит из классических фасонов</p>
+          <ul class="single-product__size">
+            <li>
+              <label>
+                <input type="radio" name="size" class="" value="">
+                <span>l</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="size" class="" value="">
+                <span>m</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="size" class="" value="">
+                <span>s</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="size" class="" value="">
+                <span>xs</span>
+              </label>
+            </li>
           </ul>
-        </aside>
-        <div class="site-content">
-          <div class="index-slider">
-            <div class="js--index-slider index-slider__wrapper">
-              <div class="item">
-                <div class="index-slider__item">
-                  <div class="index-slider__counter">1 <span class="separator">/</span> <sup>4</sup></div>
-                  <div class="index-slider__picture">
-                    <div class="index-slider__circle"></div>
-                    <a href="#" title="" class="index-slider__add-cart">Купить</a>
-                    <div class="index-slider__price">4900 <span>грн</span></div>
-                    <img src="img/slide-picture.png" alt="" width="693px" height="730px">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="single-product__price">4900 <span>грн</span></div>
+          <a href="" class="single-product__add-cart border-button border-button--white" title="">Купить</a>
         </div>
+        <img class="single-product__thumbnail" alt="" src="img/product-picture.jpg">
         <a href="" class="fallow-me" title="">
           <div class="fallow-me__icon"><span class="visually-hidden ">Инстаграмм</span></div>
         </a>
