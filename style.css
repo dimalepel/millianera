@@ -542,6 +542,8 @@ img {
 }
 .site-screen--menu-open {
   position: relative;
+  
+  overflow: hidden;
 }
 .site-screen--menu-open .overlay-menu {
   display: -webkit-box;
